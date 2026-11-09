@@ -42,6 +42,10 @@ public class Dragon {
         return selectedRiddle.getQuestion();
     }
 
+    public boolean canAnswerQuestion() {
+        return acceptsQuestions;
+    }
+
     public boolean checkAnswer(String answer) {
         return selectedRiddle.checkAnswer(answer);
     }

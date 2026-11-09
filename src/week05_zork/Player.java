@@ -12,6 +12,9 @@ public class Player {
         if (nextRoom != null) {
             currentRoom = nextRoom;
         }
+        else {
+            System.out.println(direction + " is not in room");
+        }
     }
 
     public Room getCurrentRoom() {

@@ -23,11 +23,18 @@ public class Room {
         doors.add(new Door(room, direction));
     }
 
+    public void setDragon(Dragon dragon) {
+        this.dragon = dragon;
+    }
+
     public String describe() {
         String description = "";
         description += "You are in " + color + " room.\n";
         for (Door door : doors) {
             description += door.describe();
+        }
+        if(dragon != null) {
+            description += "There is a dragon in the room\n";
         }
         return description;
     }
