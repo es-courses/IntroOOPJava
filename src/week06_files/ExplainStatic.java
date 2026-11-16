@@ -1,6 +1,4 @@
-package week_06_files;
-
-import java.util.Scanner;
+package week06_files;
 
 public class ExplainStatic {
     public static int a;
